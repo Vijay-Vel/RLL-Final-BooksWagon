@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="29" passed="22" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-12T17:51:50 IST" name="test1" finished-at="2023-12-12T17:54:59 IST" duration-ms="189167">
+    <groups>
+    </groups>
+    <test started-at="2023-12-12T17:51:50 IST" name="POMframework for Login" finished-at="2023-12-12T17:52:17 IST" duration-ms="27038">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:51:50 IST" name="getnameMethod" finished-at="2023-12-12T17:51:50 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1479ed5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:51:50 IST" name="start_browser" finished-at="2023-12-12T17:51:55 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="5729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="Test_LoginLink()[pri:1, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:51:56 IST" name="Test_LoginLink" finished-at="2023-12-12T17:51:59 IST" duration-ms="3296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_LoginLink -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:51:59 IST" name="generateTestStatus" finished-at="2023-12-12T17:51:59 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.Test_LoginLink() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Test_LoginLink status=SUCCESS method=LoginPageTest.Test_LoginLink()[pri:1, instance:tests.LoginPageTest@4c168660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="Test_Logo()[pri:2, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:51:59 IST" name="Test_Logo" finished-at="2023-12-12T17:52:00 IST" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Logo -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:00 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.Test_Logo()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Test_Logo status=SUCCESS method=LoginPageTest.Test_Logo()[pri:2, instance:tests.LoginPageTest@4c168660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:02 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:52:06 IST" duration-ms="3962" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [My Account] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [My Account] but found [My Account]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at org.testng.Assert.assertNotEquals(Assert.java:2219)
+at tests.LoginPageTest.test_login(LoginPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:06 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:06 IST" duration-ms="621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=FAILURE method=LoginPageTest.test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:06 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:52:11 IST" duration-ms="5193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:11 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=LoginPageTest.test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:11 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:52:16 IST" duration-ms="4688" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[group5@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grp5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [My Account] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [My Account] but found [My Account]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at org.testng.Assert.assertNotEquals(Assert.java:2219)
+at tests.LoginPageTest.test_login(LoginPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:16 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:17 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=FAILURE method=LoginPageTest.test_login(java.lang.String,java.lang.String)[pri:3, instance:tests.LoginPageTest@4c168660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.LoginPageTest@4c168660]" started-at="2023-12-12T17:52:17 IST" name="close_browser" finished-at="2023-12-12T17:52:17 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- POMframework for Login -->
+    <test started-at="2023-12-12T17:52:17 IST" name="POMframework for Fiction Books" finished-at="2023-12-12T17:52:44 IST" duration-ms="27288">
+      <class name="tests.FictionBooksTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:17 IST" name="getnameMethod" finished-at="2023-12-12T17:52:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3211cc84]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:17 IST" name="start_browser" finished-at="2023-12-12T17:52:20 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="3369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:20 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:52:25 IST" duration-ms="4552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:25 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FictionBooksTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=FictionBooksTest.test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.FictionBooksTest@51df223b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="ClickFiction_CheckTitle()[pri:2, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:25 IST" name="ClickFiction_CheckTitle" finished-at="2023-12-12T17:52:35 IST" duration-ms="10150" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title is Same expected [Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com] but found [Fiction Books]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title is Same expected [Online BookStore India, Buy Books Online, Buy Book Online India - Bookswagon.com] but found [Fiction Books]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at tests.FictionBooksTest.ClickFiction_CheckTitle(FictionBooksTest.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickFiction_CheckTitle -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:35 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:36 IST" duration-ms="484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FictionBooksTest.ClickFiction_CheckTitle() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=ClickFiction_CheckTitle status=FAILURE method=FictionBooksTest.ClickFiction_CheckTitle()[pri:2, instance:tests.FictionBooksTest@51df223b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="book_click()[pri:3, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:36 IST" name="book_click" finished-at="2023-12-12T17:52:40 IST" duration-ms="4175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- book_click -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:40 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:40 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FictionBooksTest.book_click() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=book_click status=SUCCESS method=FictionBooksTest.book_click()[pri:3, instance:tests.FictionBooksTest@51df223b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="buynow_click()[pri:4, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:40 IST" name="buynow_click" finished-at="2023-12-12T17:52:44 IST" duration-ms="4146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buynow_click -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:44 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FictionBooksTest.buynow_click() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=buynow_click status=SUCCESS method=FictionBooksTest.buynow_click()[pri:4, instance:tests.FictionBooksTest@51df223b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.FictionBooksTest@51df223b]" started-at="2023-12-12T17:52:44 IST" name="close_browser" finished-at="2023-12-12T17:52:44 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.FictionBooksTest -->
+    </test> <!-- POMframework for Fiction Books -->
+    <test started-at="2023-12-12T17:52:44 IST" name="POMframework for Todays Deal And Search Bar" finished-at="2023-12-12T17:53:13 IST" duration-ms="28443">
+      <class name="tests.TodaysDealPageTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:52:44 IST" name="getnameMethod" finished-at="2023-12-12T17:52:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d2eb7fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:52:44 IST" name="start_browser" finished-at="2023-12-12T17:52:49 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="4903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:52:49 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:52:53 IST" duration-ms="4088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:52:53 IST" name="generateTestStatus" finished-at="2023-12-12T17:52:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TodaysDealPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=TodaysDealPageTest.test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.TodaysDealPageTest@29a60c27] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="dealstoday()[pri:2, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:52:53 IST" name="dealstoday" finished-at="2023-12-12T17:53:04 IST" duration-ms="10559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dealstoday -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:04 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TodaysDealPageTest.dealstoday() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=dealstoday status=SUCCESS method=TodaysDealPageTest.dealstoday()[pri:2, instance:tests.TodaysDealPageTest@29a60c27] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="search(java.lang.String)[pri:3, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:04 IST" name="search" data-provider="SearchData" finished-at="2023-12-12T17:53:09 IST" duration-ms="5265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Beyond The Story: 10-Year Record of BTS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:09 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TodaysDealPageTest.search(java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=search status=SUCCESS method=TodaysDealPageTest.search(java.lang.String)[pri:3, instance:tests.TodaysDealPageTest@29a60c27] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="search(java.lang.String)[pri:3, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:09 IST" name="search" data-provider="SearchData" finished-at="2023-12-12T17:53:12 IST" duration-ms="2869" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BTS BOOK]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assert not same search item expected [Beyond The Story: 10-Year Record of BTS] but found [BTS BOOK]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assert not same search item expected [Beyond The Story: 10-Year Record of BTS] but found [BTS BOOK]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at tests.TodaysDealPageTest.search(TodaysDealPageTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:12 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:12 IST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TodaysDealPageTest.search(java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=search status=FAILURE method=TodaysDealPageTest.search(java.lang.String)[pri:3, instance:tests.TodaysDealPageTest@29a60c27] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.TodaysDealPageTest@29a60c27]" started-at="2023-12-12T17:53:12 IST" name="close_browser" finished-at="2023-12-12T17:53:13 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.TodaysDealPageTest -->
+    </test> <!-- POMframework for Todays Deal And Search Bar -->
+    <test started-at="2023-12-12T17:53:13 IST" name="POMframework for Request a Book" finished-at="2023-12-12T17:53:53 IST" duration-ms="40329">
+      <class name="tests.RequestABookTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:13 IST" name="getnameMethod" finished-at="2023-12-12T17:53:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@56fa0ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:13 IST" name="start_browser" finished-at="2023-12-12T17:53:24 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="11741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:24 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:53:29 IST" duration-ms="4522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:29 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RequestABookTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=RequestABookTest.test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.RequestABookTest@89ff02e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:29 IST" name="requestbook" data-provider="BookDetails" finished-at="2023-12-12T17:53:36 IST" duration-ms="7007" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.780143459699E12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shiva Purana: Vol. 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vijay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.977846745E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at tests.RequestABookTest.requestbook(RequestABookTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestbook -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:36 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:36 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=requestbook status=FAILURE method=RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:36 IST" name="requestbook" data-provider="BookDetails" finished-at="2023-12-12T17:53:44 IST" duration-ms="7170" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.3459699E7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shiva Purana: Vol. 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vijay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.977846745E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at tests.RequestABookTest.requestbook(RequestABookTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestbook -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:44 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:44 IST" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=requestbook status=FAILURE method=RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:44 IST" name="requestbook" data-provider="BookDetails" finished-at="2023-12-12T17:53:51 IST" duration-ms="7349" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.3459699E7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shiva Purana: Vol. 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vijay]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.977846745E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Book Already Requested did not expect [You have requested for this book before.] but found [You have requested for this book before.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1581)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2197)
+at tests.RequestABookTest.requestbook(RequestABookTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestbook -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:51 IST" name="generateTestStatus" finished-at="2023-12-12T17:53:51 IST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=requestbook status=FAILURE method=RequestABookTest.requestbook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.RequestABookTest@89ff02e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.RequestABookTest@89ff02e]" started-at="2023-12-12T17:53:51 IST" name="close_browser" finished-at="2023-12-12T17:53:53 IST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.RequestABookTest -->
+    </test> <!-- POMframework for Request a Book -->
+    <test started-at="2023-12-12T17:53:53 IST" name="POMframework for Award Winners" finished-at="2023-12-12T17:54:09 IST" duration-ms="16013">
+      <class name="tests.AwardWinnersPageTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:53:53 IST" name="getnameMethod" finished-at="2023-12-12T17:53:53 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5e278e25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:53:53 IST" name="start_browser" finished-at="2023-12-12T17:53:56 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="3411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:53:56 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:54:01 IST" duration-ms="4170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:01 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.AwardWinnersPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=AwardWinnersPageTest.test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.AwardWinnersPageTest@3ebff828] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="click_AwardWinner()[pri:2, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:01 IST" name="click_AwardWinner" finished-at="2023-12-12T17:54:02 IST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_AwardWinner -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:02 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.AwardWinnersPageTest.click_AwardWinner()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=click_AwardWinner status=SUCCESS method=AwardWinnersPageTest.click_AwardWinner()[pri:2, instance:tests.AwardWinnersPageTest@3ebff828] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="click_book()[pri:3, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:02 IST" name="click_book" finished-at="2023-12-12T17:54:08 IST" duration-ms="6819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_book -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:08 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.AwardWinnersPageTest.click_book() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=click_book status=SUCCESS method=AwardWinnersPageTest.click_book()[pri:3, instance:tests.AwardWinnersPageTest@3ebff828] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.AwardWinnersPageTest@3ebff828]" started-at="2023-12-12T17:54:08 IST" name="close_browser" finished-at="2023-12-12T17:54:09 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.AwardWinnersPageTest -->
+    </test> <!-- POMframework for Award Winners -->
+    <test started-at="2023-12-12T17:54:09 IST" name="POMframework for Best Sellers " finished-at="2023-12-12T17:54:21 IST" duration-ms="12426">
+      <class name="tests.BestSellersPageTest">
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:09 IST" name="start_browser" finished-at="2023-12-12T17:54:12 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="3268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:09 IST" name="getnameMethod" finished-at="2023-12-12T17:54:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@62ee1c89]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:12 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:54:17 IST" duration-ms="4594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:17 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BestSellersPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=BestSellersPageTest.test_login(java.lang.String,java.lang.String)[pri:1, instance:tests.BestSellersPageTest@34645867] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="click_BestSellers()[pri:2, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:17 IST" name="click_BestSellers" finished-at="2023-12-12T17:54:18 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_BestSellers -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:18 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BestSellersPageTest.click_BestSellers()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=click_BestSellers status=SUCCESS method=BestSellersPageTest.click_BestSellers()[pri:2, instance:tests.BestSellersPageTest@34645867] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="click_book()[pri:3, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:18 IST" name="click_book" finished-at="2023-12-12T17:54:21 IST" duration-ms="3128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_book -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:21 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:21 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BestSellersPageTest.click_book() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=click_book status=SUCCESS method=BestSellersPageTest.click_book()[pri:3, instance:tests.BestSellersPageTest@34645867] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.BestSellersPageTest@34645867]" started-at="2023-12-12T17:54:21 IST" name="close_browser" finished-at="2023-12-12T17:54:21 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.BestSellersPageTest -->
+    </test> <!-- POMframework for Best Sellers  -->
+    <test started-at="2023-12-12T17:54:21 IST" name="POMframework for Box Sets " finished-at="2023-12-12T17:54:39 IST" duration-ms="17900">
+      <class name="tests.BoxSetsPageTest">
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:21 IST" name="getnameMethod" finished-at="2023-12-12T17:54:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2ab7f649]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:21 IST" name="start_browser" finished-at="2023-12-12T17:54:25 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="4007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:49, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:25 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:54:32 IST" duration-ms="6903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:32 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BoxSetsPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=BoxSetsPageTest.test_login(java.lang.String,java.lang.String)[pri:49, instance:tests.BoxSetsPageTest@46e8a539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="clickboxsets()[pri:50, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:32 IST" name="clickboxsets" finished-at="2023-12-12T17:54:34 IST" duration-ms="1673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickboxsets -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:34 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BoxSetsPageTest.clickboxsets()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=clickboxsets status=SUCCESS method=BoxSetsPageTest.clickboxsets()[pri:50, instance:tests.BoxSetsPageTest@46e8a539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="clickbook1()[pri:51, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:34 IST" name="clickbook1" finished-at="2023-12-12T17:54:39 IST" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickbook1 -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:39 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.BoxSetsPageTest.clickbook1() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=clickbook1 status=SUCCESS method=BoxSetsPageTest.clickbook1()[pri:51, instance:tests.BoxSetsPageTest@46e8a539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.BoxSetsPageTest@46e8a539]" started-at="2023-12-12T17:54:39 IST" name="close_browser" finished-at="2023-12-12T17:54:39 IST" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- tests.BoxSetsPageTest -->
+    </test> <!-- POMframework for Box Sets  -->
+    <test started-at="2023-12-12T17:54:39 IST" name="POMframework for New Arrivals " finished-at="2023-12-12T17:54:59 IST" duration-ms="19620">
+      <class name="tests.NewArrivalsPageTest">
+        <test-method is-config="true" signature="InitalizeExtentReport()[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:51:49 IST" name="InitalizeExtentReport" finished-at="2023-12-12T17:51:50 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitalizeExtentReport -->
+        <test-method is-config="true" signature="getnameMethod(org.testng.ITestContext)[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:39 IST" name="getnameMethod" finished-at="2023-12-12T17:54:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@52a74328]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getnameMethod -->
+        <test-method is-config="true" signature="start_browser()[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:39 IST" name="start_browser" finished-at="2023-12-12T17:54:43 IST" depends-on-methods="pages.TestBase.getnameMethod" duration-ms="3336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start_browser -->
+        <test-method signature="test_login(java.lang.String,java.lang.String)[pri:49, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:43 IST" name="test_login" data-provider="LoginDetails" finished-at="2023-12-12T17:54:47 IST" duration-ms="4180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijayvel10301@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[group@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:47 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.NewArrivalsPageTest.test_login(java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=test_login status=SUCCESS method=NewArrivalsPageTest.test_login(java.lang.String,java.lang.String)[pri:49, instance:tests.NewArrivalsPageTest@6b5966e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="selectpaper()[pri:50, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:47 IST" name="selectpaper" finished-at="2023-12-12T17:54:52 IST" duration-ms="5049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectpaper -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:52 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.NewArrivalsPageTest.selectpaper() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=selectpaper status=SUCCESS method=NewArrivalsPageTest.selectpaper()[pri:50, instance:tests.NewArrivalsPageTest@6b5966e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method signature="Select_Book()[pri:51, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:52 IST" name="Select_Book" finished-at="2023-12-12T17:54:59 IST" duration-ms="6759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Book -->
+        <test-method is-config="true" signature="generateTestStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:59 IST" name="generateTestStatus" finished-at="2023-12-12T17:54:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.NewArrivalsPageTest.Select_Book() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Select_Book status=SUCCESS method=NewArrivalsPageTest.Select_Book()[pri:51, instance:tests.NewArrivalsPageTest@6b5966e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestStatus -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:59 IST" name="close_browser" finished-at="2023-12-12T17:54:59 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+        <test-method is-config="true" signature="generateReports()[pri:0, instance:tests.NewArrivalsPageTest@6b5966e1]" started-at="2023-12-12T17:54:59 IST" name="generateReports" finished-at="2023-12-12T17:55:00 IST" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReports -->
+      </class> <!-- tests.NewArrivalsPageTest -->
+    </test> <!-- POMframework for New Arrivals  -->
+  </suite> <!-- test1 -->
+</testng-results>

@@ -1,0 +1,43 @@
+<suite name="test1" verbose="1">
+
+<test name="POMframework for Login">
+<classes>
+<class name="tests.LoginPageTest"></class>
+</classes>
+</test>
+<test name="POMframework for Fiction Books">
+<classes>
+<class name="tests.FictionBooksTest"></class>
+</classes>
+</test>
+<test name="POMframework for Todays Deal And Search Bar">
+<classes>
+<class name="tests.TodaysDealPageTest"></class>
+</classes>
+</test>
+<test name="POMframework for Request a Book">
+<classes>
+<class name="tests.RequestABookTest"></class>
+</classes>
+</test>
+<test name="POMframework for Award Winners">
+<classes>
+<class name="tests.AwardWinnersPageTest"></class>
+</classes>
+</test>
+<test name="POMframework for Best Sellers ">
+<classes>
+<class name="tests.BestSellersPageTest"></class>
+</classes>
+</test>
+<test name="POMframework for Box Sets ">
+<classes>
+<class name="tests.BoxSetsPageTest"></class>
+</classes>
+</test>
+<test name="POMframework for New Arrivals ">
+<classes>
+<class name="tests.NewArrivalsPageTest"></class>
+</classes>
+</test>
+</suite>

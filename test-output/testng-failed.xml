@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test1]">
+  <test thread-count="5" name="POMframework for Login(failed)">
+    <classes>
+      <class name="tests.LoginPageTest">
+        <methods>
+          <include name="test_login" invocation-numbers="0 2"/>
+          <include name="generateReports"/>
+          <include name="InitalizeExtentReport"/>
+          <include name="getnameMethod"/>
+          <include name="close_browser"/>
+          <include name="start_browser"/>
+          <include name="generateTestStatus"/>
+        </methods>
+      </class> <!-- tests.LoginPageTest -->
+    </classes>
+  </test> <!-- POMframework for Login(failed) -->
+  <test thread-count="5" name="POMframework for Fiction Books(failed)">
+    <classes>
+      <class name="tests.FictionBooksTest">
+        <methods>
+          <include name="generateReports"/>
+          <include name="InitalizeExtentReport"/>
+          <include name="ClickFiction_CheckTitle"/>
+          <include name="getnameMethod"/>
+          <include name="start_browser"/>
+          <include name="generateTestStatus"/>
+          <include name="close_browser"/>
+        </methods>
+      </class> <!-- tests.FictionBooksTest -->
+    </classes>
+  </test> <!-- POMframework for Fiction Books(failed) -->
+  <test thread-count="5" name="POMframework for Todays Deal And Search Bar(failed)">
+    <classes>
+      <class name="tests.TodaysDealPageTest">
+        <methods>
+          <include name="start_browser"/>
+          <include name="close_browser"/>
+          <include name="generateReports"/>
+          <include name="InitalizeExtentReport"/>
+          <include name="getnameMethod"/>
+          <include name="search" invocation-numbers="1"/>
+          <include name="generateTestStatus"/>
+        </methods>
+      </class> <!-- tests.TodaysDealPageTest -->
+    </classes>
+  </test> <!-- POMframework for Todays Deal And Search Bar(failed) -->
+  <test thread-count="5" name="POMframework for Request a Book(failed)">
+    <classes>
+      <class name="tests.RequestABookTest">
+        <methods>
+          <include name="start_browser"/>
+          <include name="close_browser"/>
+          <include name="generateReports"/>
+          <include name="InitalizeExtentReport"/>
+          <include name="getnameMethod"/>
+          <include name="requestbook" invocation-numbers="0 1 2"/>
+          <include name="generateTestStatus"/>
+        </methods>
+      </class> <!-- tests.RequestABookTest -->
+    </classes>
+  </test> <!-- POMframework for Request a Book(failed) -->
+</suite> <!-- Failed suite [test1] -->
